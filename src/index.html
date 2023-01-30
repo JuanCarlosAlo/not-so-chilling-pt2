@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- PON UN FAVICON!!! -->
+    <link rel="icon" type="image/svg+xml" href="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CAMBIA EL TITLE!!! -->
+    <title>Vite Template</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="sidebar">
+        <ol id="steps" class="steps"></ol>
+      </div>
+      <div class="form-container">
+        <div class="form-header">
+          <h2 id="form-title" class="form-header__title">Personal Info</h2>
+          <p id="form-description" class="form-header__description">
+            Please provide your name, email address, and phone number.
+          </p>
+        </div>
+        <form id="form-data" class="form">
+          <div class="form__field">
+            <label for="name-input" class="form__label">Name</label>
+            <input id="name-input" type="text" class="form__input" />
+          </div>
+          <div class="form__field">
+            <label for="email-input" class="form__label">Email</label>
+            <input id="email-input" type="text" class="form__input" />
+          </div>
+          <div class="form__field">
+            <label for="phone-input" class="form__label">Phone</label>
+            <input id="phone-input" type="text" class="form__input" />
+          </div>
+        </form>
+        <div id="plans-container">
+          <div id="card-plan-container" class="card-container">
+            <div class="card" data-plan="arcade">
+              <img
+                class="card__image"
+                src="assets/images/icon-arcade.svg"
+                alt="arcade icon"
+              />
+              <h3 class="card__title">Arcade</h3>
+              <span class="card__price">$9/mo</span>
+              <span class="card__offer">2 months free</span>
+            </div>
+            <div class="card " data-plan="advanced">
+              <img
+                class="card__image"
+                src="assets/images/icon-advanced.svg"
+                alt="advanced icon"
+              />
+              <h3 class="card__title">Advanced</h3>
+              <span class="card__price">$12/mo</span>
+              <span class="card__offer">2 months free</span>
+            </div>
+            <div class="card" data-plan="pro">
+              <img
+                class="card__image"
+                src="assets/images/icon-pro.svg"
+                alt="pro icon"
+              />
+              <h3 class="card__title">Pro</h3>
+              <span class="card__price">$15/mo</span>
+              <span class="card__offer">2 months free</span>
+            </div>
+          </div>
+          <div id="select-plan" class="select-plan">
+            <span
+              id="monthly-text"
+              class="select-plan__text select-plan__text--selected"
+            >
+              Monthly</span
+            >
+            <input
+              id="toggle-plan"
+              type="checkbox"
+              class="select-plan__input"
+            />
+            <label for="toggle-plan" class="select-plan__label"></label>
+            <span id="yearly-text" class="select-plan__text"> Yearly</span>
+          </div>
+        </div>
+        <div class="buttons">
+          <button id="button-back" class="button button--back">Go Back</button>
+          <button id="button-next" class="button button--next">
+            Next Step
+          </button>
+        </div>
+      </div>
+    </main>
+    </main>
+   
+    <script type="module" src="./js/index.js"></script>
+  </body>
+</html>

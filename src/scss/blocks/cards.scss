@@ -1,0 +1,42 @@
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+    margin-bottom: 2rem;
+  }
+  
+  .card {
+    border-radius: 0.5rem;
+    padding: 1.25rem 1rem;
+    width: 140px;
+    border: 1px solid var(--light-grey);
+    cursor: pointer;
+  
+    &__image {
+      width: 40px;
+      height: 40px;
+      margin-bottom: 40px;
+    }
+  
+    &__title {
+      margin: 0;
+      margin-bottom: 0.5rem;
+      color: var(--denim);
+    }
+  
+    &__price {
+      display: block;
+      color: var(--grey);
+      margin-bottom: 0.5rem;
+    }
+  
+    &__offer {
+      color: var(--denim);
+      font-weight: 500;
+    }
+  
+    &--selected {
+      border: 1px solid var(--purple);
+      background-color: var(--light-grey);
+    }
+}

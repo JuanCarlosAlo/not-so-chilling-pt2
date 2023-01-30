@@ -1,0 +1,30 @@
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: auto;
+  }
+  
+  .button {
+    border: none;
+    cursor: pointer;
+  
+    &--back {
+      background: none;
+      outline: none;
+      color: var(--grey);
+  
+      &:hover {
+        color: var(--denim);
+        font-weight: 500;
+      }
+    }
+  
+    &--next {
+      background-color: var(--denim);
+      color: var(--white);
+      margin-left: auto;
+      padding: 0.7rem 1.5rem;
+      border-radius: 0.5rem;
+    }
+  }
